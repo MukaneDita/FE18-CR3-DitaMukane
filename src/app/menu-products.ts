@@ -4,7 +4,7 @@ export let menuProducts = [
         image: "rigatoni.jpg",
         description: "Spicy Italian sausage & meat sauce tossed & topped with mozzarella, Parmesan & ricotta",
         price: 13.50,
-        availability: false
+        availability: true
     }, {
         name: "Shrimp Fra Diavolo",
         image: "shrimpPasta.jpg",

@@ -1,15 +1,17 @@
-<h1 class="text-center">Product Details</h1>
+<div class="container mt-5 shadow p-3 mb-5 bg-body-tertiary rounded">
+    <h1 class="text-center ">Product Details</h1>
 
-<div class="container my-5 d-flex align-items-center justify-content-center">
-    <div class="d-flex" style="width: 50rem;">
-        <div class="">
-            <img src="assets/images/{{product.image}}" style="width: 20rem;" alt="...">
-        </div>
-        <div class=" ms-3">
-            <h4>{{product.name}}</h4>
-            <p>{{product.price}} €</p>
-            <p>{{product.description}}</p>
-            <p routerLink="" class="btn btn-success">Cart</p>
+    <div class="container my-5 d-flex align-items-center justify-content-center">
+        <div class="d-flex" style="width: 50rem;">
+            <div class="">
+                <img src="assets/images/{{product.image}}" style="width: 20rem;" alt="...">
+            </div>
+            <div class=" ms-3">
+                <h4>{{product.name}}</h4>
+                <p>{{product.price}} €</p>
+                <p>{{product.description}}</p>
+                <a (click)="addToCart(product)" class="btn btn-success">Add To Cart</a>
+            </div>
         </div>
     </div>
 </div>

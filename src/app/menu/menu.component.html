@@ -1,13 +1,20 @@
-<div class="container">
-    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-xs-1 ">
+<div class="container mt-5 shadow p-3 mb-5 bg-body-tertiary rounded">
+    <div class="row row-gap-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-xs-1 ">
         <div *ngFor="let val of products; index as id" class="text-center">
             <div class="card mx-auto" style="width: 18rem;">
                 <img src="assets/images/{{val.image}}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">{{val.name}}</h5>
-                    <div class="card-body">
-                        <a routerLink="/products/{{id}}" class="btn btn-success">Details</a>
-                        <a (click)="addToCart(val)" class="btn btn-success">Add To Cart</a>
+                    <div *ngIf="val.availability">
+                        <div class="card-body">
+                            <a routerLink="/products/{{id}}" class="btn btn-success me-2">Details</a>
+                            <a (click)="addToCart(val)" class="btn btn-success">Add To Cart</a>
+                        </div>
+                    </div>
+                    <div *ngIf="!val.availability">
+                        <div class="card-body">
+                            <p>The product is not available.</p>
+                        </div>
                     </div>
                 </div>
             </div>
