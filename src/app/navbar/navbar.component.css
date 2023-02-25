@@ -1,0 +1,21 @@
+.navbar {
+    background-color: rgb(161, 198, 161) !important;
+}
+
+a:hover {
+    background-color: rgb(73, 54, 48);
+    color: white;
+    padding: .3rem;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: rgb(73, 54, 48) !important;
+    color: white !important;
+    border: 2px solid white !important;
+}
+
+.btn {
+    color: black !important;
+    border: 2px solid black !important;
+}
