@@ -1,0 +1,22 @@
+.btn {
+    background-color: rgb(186, 59, 10) !important;
+    border: rgb(186, 59, 10) !important;
+    color: white;
+}
+
+h5 {
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Parisienne', cursive;
+    background-color: rgb(167, 167, 167);
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.price {
+    font-weight: bold;
+}

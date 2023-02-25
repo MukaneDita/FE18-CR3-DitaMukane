@@ -1,0 +1,21 @@
+h5 {
+    font-family: 'Libre Caslon Text', serif;
+}
+
+h1 {
+    font-family: 'Parisienne', cursive;
+    background-color: rgb(167, 167, 167);
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#add {
+    background-color: rgb(186, 59, 10) !important;
+    border: rgb(186, 59, 10) !important;
+}
+
+#details {
+    background-color: rgb(0, 0, 0) !important;
+    border: rgb(0, 0, 0) !important;
+}

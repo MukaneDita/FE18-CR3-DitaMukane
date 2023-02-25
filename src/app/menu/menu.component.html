@@ -1,4 +1,5 @@
 <div class="container mt-5 shadow p-3 mb-5 bg-body-tertiary rounded">
+    <h1 class="text-center " style="margin-top: 1rem; margin-bottom: 1.5rem;">Our Menu</h1>
     <div class="row row-gap-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-xs-1 ">
         <div *ngFor="let val of products; index as id" class="text-center">
             <div class="card mx-auto" style="width: 18rem;">
@@ -7,8 +8,8 @@
                     <h5 class="card-title">{{val.name}}</h5>
                     <div *ngIf="val.availability">
                         <div class="card-body">
-                            <a routerLink="/products/{{id}}" class="btn btn-success me-2">Details</a>
-                            <a (click)="addToCart(val)" class="btn btn-success">Add To Cart</a>
+                            <a routerLink="/products/{{id}}" class="btn btn-success me-2" id="details">Details</a>
+                            <a (click)="addToCart(val)" class="btn btn-success" id="add">Add To Cart</a>
                         </div>
                     </div>
                     <div *ngIf="!val.availability">

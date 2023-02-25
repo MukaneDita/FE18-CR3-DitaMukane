@@ -44,7 +44,7 @@ export let menuProducts = [
     }, {
         name: "Lasagna",
         image: "lasagna.jpg",
-        description: "towering layers of meat sauce, ricotta, mozzarella, provolone & Parmesan",
+        description: "Towering layers of meat sauce, ricotta, mozzarella, provolone & Parmesan",
         price: 13.50,
         availability: true
     },

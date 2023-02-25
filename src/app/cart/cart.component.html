@@ -12,7 +12,8 @@
             </div>
         </div>
     </div> -->
-<div class="container">
+<div class="container mt-5 shadow p-3 mb-5 bg-body-tertiary rounded">
+    <h1 class="text-center">Order List</h1>
     <table class="table">
         <div *ngFor="let val of cart">
             <tbody style="column-width: 20rem;">
@@ -20,8 +21,26 @@
                     <td><img src="assets/images/{{val.image}}" class="img-fluid rounded-start" style="width:10rem ;" alt="{{val.name}}"></td>
                     <td class="pe-5 ps-3 fw-bold th-lg-9">{{val.name}}</td>
                     <td class="ps-5">{{val.price}} €</td>
+                    <td class="flex-nowrap ps-5"><button type="button" (click)="minus()"><i class="fa fa-minus"></i></button><input class="w-25" type="text" [value]="quantity"><button type="button" (click)="plus()"><i class="fa fa-plus"></i></button></td>
                 </tr>
             </tbody>
         </div>
     </table>
+    <div>
+        <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+            <div>
+                <h1 class="text-center">Order Form</h1>
+                <p>Please fill up the info for the delivery</p>
+            </div>
+            <div class="mb-3">
+                <label class="w-25" for="name">Name</label><br>
+                <input class="w-100" id="name" type="text" formControlName="name">
+            </div>
+            <div>
+                <label class="w-25" for="address">Address</label><br>
+                <input class="w-100" id="address" type="text" formControlName="address">
+            </div>
+            <button class="btn my-4" type="submit">Purchase</button>
+        </form>
+    </div>
 </div>

@@ -1,0 +1,25 @@
+h1 {
+    font-family: 'Parisienne', cursive;
+    background-color: rgb(167, 167, 167);
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: rgb(186, 59, 10) !important;
+    text-decoration: none !important;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.nav-link.active {
+    color: white !important;
+}
+
+.pillText {
+    width: 20rem !important;
+}
