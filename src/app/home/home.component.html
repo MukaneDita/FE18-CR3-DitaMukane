@@ -24,7 +24,7 @@
 
         <div class="w-100 text-center ">
             <h1> Why Choose us</h1>
-            <p>Welcome to Restorante Il Gambero Rosso, where you’ll enjoy traditional Italian cuisine served in a warm and welcoming atmosphere.</p>
+            <p class="intro">Welcome to Restorante Il Gambero Rosso, where you’ll enjoy traditional Italian cuisine served in a warm and welcoming atmosphere.</p>
         </div>
         <div class=" container ">
             <div class="row ">
@@ -44,44 +44,38 @@
         </div>
         <div class="text-center ">
             <h1> Check our specials</h1>
-            <p>We have a variety of daily specials and seasonal dishes, made from local ingredients that capture the essence of Italian cuisine. Our offerings include vegan and vegetarian options for all tastes..</p>
+            <p class="intro">We have a variety of daily specials and seasonal dishes, made from local ingredients that capture the essence of Italian cuisine. Our offerings include vegan and vegetarian options for all tastes..</p>
         </div>
-        <div class="row">
-            <div class="col-3 ">
-                <!-- Tab navs -->
-                <div class="nav flex-column nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link active" id="v-pills-link1-tab" data-mdb-toggle="pill" href="#v-pills-link1" role="tab" aria-controls="v-pills-link1" aria-selected="true">Spicy Arrabbiata</a>
-                    <a class="nav-link" id="v-pills-link2-tab" data-mdb-toggle="pill" href="#v-pills-link2" role="tab" aria-controls="v-pills-link2" aria-selected="false">Lasagna</a>
-                    <a class="nav-link" id="v-pills-link3-tab" data-mdb-toggle="pill" href="#v-pills-link3" role="tab" aria-controls="v-pills-link3" aria-selected="false">Margherita</a>
-                    <a class="nav-link" id="v-pills-link4-tab" data-mdb-toggle="pill" href="#v-pills-link4" role="tab" aria-controls="v-pills-link4" aria-selected="false">Baked Rigatoni</a>
-                </div>
-                <!-- Tab navs -->
-            </div>
-
-            <div class="col-9">
-                <!-- Tab content -->
-                <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-link1" role="tabpanel" aria-labelledby="v-pills-link1-tab">
-                        <div class="pillText"> Spicy Italian sausage, pepperoni, caramelized red onions, Gorgonzola, mozzarella, provolone & our authentic pizza sauce</div>
-
-                        <div> <b>Price: 12.50 €</b> </div>
-                        <img class="w-50" src="assets/images/arrabbiata.jpg" alt="">
+        <div id="specials">
+            <div class="row">
+                <div class="d-flex align-items-start">
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Spicy Arrabbiata</button>
+                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Lasagna</button>
+                        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Margherita</button>
+                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Baked Rigatoni</button>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-link2" role="tabpanel" aria-labelledby="v-pills-link2-tab">
-                        <div> Towering layers of meat sauce, ricotta, mozzarella, provolone & Parmesan</div>
-
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-link3" role="tabpanel" aria-labelledby="v-pills-link3-tab">
-                        <div> Fresh mozzarella, fresh basil & our authentic pizza sauce</div>
-
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-link4" role="tabpanel" aria-labelledby="v-pills-link4-tab">
-                        <div> Spicy Italian sausage & meat sauce tossed & topped with mozzarella, Parmesan & ricotta</div>
-
+                    <div class="tab-content w-70" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                            <div class="pillText"> Spicy Italian sausage, pepperoni, caramelized red onions, Gorgonzola, mozzarella, provolone & our authentic pizza sauce</div>
+                            <div> <b>Price: 12.50 €</b> </div>
+                            <img class="w-50" src="assets/images/arrabbiata.jpg" alt=""></div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                            <div class="pillText"> Towering layers of meat sauce, ricotta, mozzarella, provolone & Parmesan</div>
+                            <div> <b>Price: 13.50 €</b> </div>
+                            <img class="w-50" src="assets/images/lasagna.jpg" alt=""></div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+                            <div class="pillText"> Fresh mozzarella, fresh basil & our authentic pizza sauce</div>
+                            <div> <b>Price: 10.30 €</b> </div>
+                            <img class="w-50" src="assets/images/margharita.jpg" alt=""></div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+                            <div class="pillText"> Spicy Italian sausage & meat sauce tossed & topped with mozzarella, Parmesan & ricotta</div>
+                            <div> <b>Price: 13.50 €</b> </div>
+                            <img class="w-50" src="assets/images/rigatoni.jpg" alt=""></div>
                     </div>
                 </div>
-                <!-- Tab content -->
             </div>
         </div>
+
     </div>
 </div>

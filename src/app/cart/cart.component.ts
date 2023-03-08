@@ -10,11 +10,19 @@ import { FormBuilder } from '@angular/forms';
 })
 export class CartComponent implements OnInit {
   cart: Array<IProducts> = [];
+  total: number = 0;
+  newCheckout: any = "";
   checkoutForm = this.fb.group({
     name: '',
     address: '',
   });
   constructor(private cs: CartService, private fb: FormBuilder) { }
+
+  //delete btn from cart
+  deleteQtty(i: number) {
+    this.cs.deleteQtty(i);
+    this.total = this.cs.total();
+  }
 
   onSubmit(): void {
     console.warn('Your order has been submitted', this.checkoutForm.value);
@@ -23,19 +31,21 @@ export class CartComponent implements OnInit {
 
   ngOnInit(): void {
     this.cart = this.cs.getCart();
+    this.total = this.cs.total()
   }
   quantity: number = 1
   i = 1
-  plus() {
-    if (this.i) {
-      this.i++;
-      this.quantity = this.i;
-    }
-  }
-  minus() {
-    if (this.i != 1) {
-      this.i--;
-      this.quantity = this.i;
-    }
-  }
+  // plus() {
+  //   if (this.i) {
+  //     this.i++;
+  //     this.quantity = this.i;
+  //   }
+  // }
+  // minus() {
+  //   if (this.i != 1) {
+  //     this.i--;
+  //     this.quantity = this.i;
+  //   }
+  // }
+
 }

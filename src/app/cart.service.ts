@@ -13,5 +13,21 @@ export class CartService {
   getCart() {
     return this.cart;
   }
+  clearCart() {
+    this.cart = [];
+    return this.cart;
+  }
+  total() {
+    let total: number = 0;
+    for (let obj of this.cart) {
+      total = total + (obj.price * obj.quantity);
+    }
+    return total;
+  }
+
+  deleteQtty(i: number) {
+    this.cart[i].quantity = 1;
+    this.cart.splice(i, 1);
+  }
 
 }
